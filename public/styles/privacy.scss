@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.main{
+    width: 100%;
+    text-align: center;
+    line-height: 28px;
+    padding: 30px 50px;
+    background: mix(darkslategrey, black);
+    color: wheat;
+    header{
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        a{
+            font-family: arial black;
+            color: black;
+            border: 1px solid black;
+            width: fit-content;
+            padding: 6px 10px;
+            background-color: yellow;
+            border-radius: 10px;
+            text-shadow: 1px 1px 1px black;
+        }
+
+    }
+    .top{
+        width: 100%;
+        text-align: center;
+    }
+    .content{
+        text-align: center;
+        a{
+            background: black;
+            width: fit-content;
+            padding: 8px 10px;
+            color: white;
+            border-radius: 10px;
+            &:hover{
+                color: yellow;
+                transition: 1s;
+
+            }
+        }
+    }
+}

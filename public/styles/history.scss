@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+
+
+
+
+header{
+    width: 100%;
+    // border: 1px solid;
+    padding: 20px 0;
+    background: linear-gradient(to right, black,darkslategrey);
+    nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 25px;
+        align-items: center;
+        .logo{
+            display: flex;
+            align-items: center;
+            img{
+                width: 100px;
+                height: 30px;
+            }
+
+            .ml{
+                color: yellow;
+                font-family: cooper black;
+                letter-spacing: 7px;
+                text-shadow: 1px 1px 1px black;
+                padding: 8px 7px;
+    
+            }
+        }
+
+        .routes{
+            display: flex;
+            gap: 1em;
+            padding-top: 10px;
+
+            .harm{
+                font-family: arial black;
+                font-size: 32px;
+                font-weight: 900;
+                color: yellow;
+                display: none;
+            }
+
+            .home{
+                background: yellow;
+                color: black;
+            }
+            a{
+                font-family: elephant;
+                color: white;
+                padding: 8px 7px;
+                &:hover{
+                    background: yellow;
+                    color: black;
+                    transition: 0.5s;
+                }
+                
+            }
+        }
+    }
+}
+
+body{
+    height: fit-content;
+    background: mix(darkslategrey, black);
+}
+.body{
+    width: 100%;
+    height: 100%;
+
+    .harmburg{
+        background: linear-gradient(black,darkslategrey);
+        width:100%;
+        height: 100%;
+        padding: 0 20px;
+        display: none;
+        // position: relative;
+        // border-top-right-radius: 200px;
+        // border-bottom-right-radius: 200px;
+        
+        .wrap{
+            padding-top: 20px;
+            // padding-left: 20px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            a{
+                font-family: arial black;
+                font-size: large;
+                color: yellow;
+                width: fit-content;
+                padding: 3px 0;
+                &:hover{
+                    margin-left: 16px;
+                    transition: all ease-out .4s;
+                    background-color: yellow;
+                    color: black;
+                    // border-radius: 10px;
+                
+                }
+                
+            }
+        }
+        .close{
+            padding: 12px 0;
+            width: 100%;
+            font-family: rockwell;
+            font-weight: 700;
+            color: black;
+            background-color: yellow;
+            font-size: larger;
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            cursor: pointer;
+            &:hover{
+                background: red;
+                transition: 0.5s;
+                color: white;
+            }
+        }
+        
+    }
+
+    .main{
+        .history{
+            width: 100%;
+            .swiper-wrapper{
+                padding: 40px 0;
+                display: flex;
+                gap: 1em;
+                flex-wrap: wrap;
+                justify-content: center;
+                a{
+                    img{
+                        width: 300px;
+                        height: 300px;
+                        
+                    }
+                    &:hover{
+                        transform: scale(1.03,1.03);
+                        transition: all ease-in-out .4s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+@media only screen and(max-width:720px){
+    header{
+        nav{
+            .routes{
+                // display: none;
+                a{
+                    display: none;
+                }
+
+                .harm{
+                    display: block;
+                    padding-bottom: 12px;
+                    cursor: pointer;
+                }
+            }
+            .logo{
+                img{
+                    width: 80px;
+                    height: 23px;
+                }
+                .ml{
+                    letter-spacing: normal;
+                }
+            }
+
+           
+            
+        }
+
+    }
+    .body{
+        height: 83.4vh;
+        // aside{
+        //     display: none;
+        // }
+        // .main{
+        //    align-items: center;
+        //    justify-content: center;
+        // }
+    }
+}

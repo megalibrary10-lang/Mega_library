@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  padding: 20px 0;
+  background: linear-gradient(to right, black, darkslategrey);
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 25px;
+  align-items: center;
+}
+header nav .logo {
+  display: flex;
+  align-items: center;
+}
+header nav .logo img {
+  width: 100px;
+  height: 30px;
+}
+header nav .logo .ml {
+  color: yellow;
+  font-family: cooper black;
+  letter-spacing: 7px;
+  text-shadow: 1px 1px 1px black;
+  padding: 8px 7px;
+}
+header nav .routes {
+  display: flex;
+  gap: 1em;
+  padding-top: 10px;
+}
+header nav .routes .harm {
+  font-family: arial black;
+  font-size: 32px;
+  font-weight: 900;
+  color: yellow;
+  display: none;
+}
+header nav .routes .home {
+  background: yellow;
+  color: black;
+}
+header nav .routes a {
+  font-family: elephant;
+  color: white;
+  padding: 8px 7px;
+}
+header nav .routes a:hover {
+  background: yellow;
+  color: black;
+  transition: 0.5s;
+}
+
+body {
+  background: darkslategrey;
+}
+
+.parent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.parent .wraper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.parent .wraper .header {
+  color: yellow;
+  font-family: cooper black;
+  font-size: larger;
+  padding: 10px 0;
+}
+.parent .wraper .cont {
+  width: 50%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-family: georgia, serif;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: justify;
+  border-radius: 10px;
+  padding: 10px 16px;
+  background: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  color: black;
+}
+
+@media only screen and (max-width: 720px) {
+  .parent .wraper .reader {
+    font-size: 24px;
+    width: 82%;
+  }
+}/*# sourceMappingURL=book-one.css.map */

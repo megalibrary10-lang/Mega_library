@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initjhsyuuyweye7e7we7eeial-scale=1.0">
+   <link rel="stylesheet" href="./public/styles/about.css">
+    <title>MEGA-LIBRARY_About</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+            <div class="ml">MEGA-LIBRRARY</div>
+            <img src="./public/asset/realPng.png" alt="">
+        </div>
+            
+            <div class="routes">
+                <a href="./index.html">HOME</a>
+                <a href="./about.html" class="home">ABOUT</a>
+                <!-- <a href="./history.html">HISTORIES</a> -->
+                <a href="./stories.html">STORIES</a>
+                <a href="./contact.html">CONTACT US</a>
+                <div class="harm">&#9776;</div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="body">
+        <aside class="harmburg">
+            <div class="wrap">
+            <a href="./index.html">HOME</a>
+            <a href="./about.html">ABOUT</a>
+            <a href="./stories.html">STORIES</a> 
+           <!-- <a href="./history.html">HISTORIES</a>  -->
+           <a href="">CONTACT</a>
+           <div class="close">Close</div>
+            </div>
+        </aside>
+        <div class="main">
+            <div class="about">About us</div>
+            <img src="./public/asset/WhatsApp Image 2025-12-09 at 17.52.23_a7df81a5.jpg" alt="">
+            <div class="content">We are team living and working hard to bring you the most interesting and latest histories and story to make you entertain, happy and be enlighing, <br>
+            you can add up your intresting stories on our websites by contacting us through our <a href="">Contact page</a>, reading stories and history are importand to our society and also our personal benefit by making us understandable, stories here are very intresting and understandable as we ensure the uploaded file are beign gone through to bring the best to our users 
+            </div>
+        </div>
+    </div>
+    
+
+
+
+    <script>
+        let harm = document.querySelector('.harm')
+        harm.onclick = function(event){
+            let aside= document.querySelector('.harmburg')
+            let main= document.querySelector('.main')
+            aside.style.display ="block"
+            main.style.display ="none"
+        }
+        
+        let close = document.querySelector('.close')
+        close.onclick = function(event){
+        let aside = document.querySelector('.harmburg')
+        let main= document.querySelector('.main')
+        aside.style.display ="none"
+        main.style.display ="flex"
+       
+        
+        
+    }
+    </script>
+</body>
+</html>

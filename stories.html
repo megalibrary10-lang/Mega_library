@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./public/styles/stories.css">
+    <title>MEGA-LIBRARY_Stories</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+            <div class="ml">MEGA-LIBRRARY</div>
+            <img src="./public/asset/realPng.png" alt="">
+        </div>
+            
+            <div class="routes">
+                <a href="./index.html">HOME</a>
+                <a href="./about.html">ABOUT</a>
+                <!-- <a href="./history.html">HISTORIES</a> -->
+                <a href="#"  class="home">STORIES</a>
+                <a href="./contact.html">CONTACT US</a>
+                <div class="harm">&#9776;</div>
+            </div>
+        </nav>
+    </header>
+    <div class="body">
+        
+        <aside class="harmburg">
+            <div class="wrap">
+            <a href="./index.html">HOME</a>
+            <a href="./about.html">ABOUT</a>
+            <a href="./stories.html">STORIES</a> 
+           <!-- <a href="./history.html">HISTORIES</a>  -->
+           <a href="./contact.html">CONTACT</a>
+           <div class="close">Close</div>
+            </div>
+        </aside>
+     
+            <div class="main">
+                
+                <div class="stories">
+                    <div class="swiper-wrapper">
+                    <a href="./public/stories/bookOne.html"><img src="./public/asset/daniel.jpeg" alt=""></a>
+                    <a href="./public/stories/bookTwo.html"><img src="./public/asset/abaraham.jpg" alt=""></a>
+                    <a href="./public/stories/bookThree.html"><img src="./public/asset/lucify.jpg" alt=""></a>
+                    <a href="./public/stories/bookFour.html"><img src="./public/asset/africa.png" alt=""></a>
+                    <a href="./public/stories/bookFive.html"><img src="./public/asset/Children of rapture.png" alt=""></a>
+                    <a href="./public/stories/bookSix.html"><img src="./public/asset/david and goliat.jpg" alt=""></a>
+                    <a href="./public/stories/bookSeven.html"><img src="./public/asset/mohamed.jpg" alt=""></a>
+                    <a href="./public/stories/bookEight.html"><img src="./public/asset/in the beginin bible.jpg" alt=""></a>
+                    <a href="./public/stories/bookNine.html"><img src="./public/asset/sodom and gomorrah.jpg" alt=""></a>
+                    <a href="./public/stories/bookTen.html"><img src="./public/asset/the book of enock.jpg" alt=""></a>
+                    <a href="./public/stories/bookEleven.html"><img src="./public/asset/war.png" alt=""></a>
+                    <a href="./public/stories/bookTwelve.html"><img src="./public/asset/percy.png" alt=""></a>
+                    <a href="./public/stories/bookThirteen.html"><img src="./public/asset/night.png" alt=""></a>
+                    <a href="./public/stories/bookFourteen.html"><img src="./public/asset/gasby.png" alt=""></a>
+                    <a href="./public/stories/bookFifteen.html"><img src="./public/asset/shadow-of-the-wind-fan-casting-poster-52834-medium.jpg" alt=""></a>
+                    <a href="./public/stories/bookSixteen.html"><img src="./public/asset/Zues.png" alt=""></a>
+                </div>
+            </div>
+            </div>
+    </div>
+</body>
+</html>
+
+
+
+<script>
+    let harm = document.querySelector('.harm')
+    harm.onclick = function(event){
+        let aside= document.querySelector('.harmburg')
+        let main= document.querySelector('.main')
+        aside.style.display ="block"
+        main.style.display ="none"
+    }
+    
+    let close = document.querySelector('.close')
+    close.onclick = function(event){
+    let aside = document.querySelector('.harmburg')
+    let main= document.querySelector('.main')
+    aside.style.display ="none"
+    main.style.display ="flex"
+   
+    
+    
+}
+</script>
+</body>
+</html>

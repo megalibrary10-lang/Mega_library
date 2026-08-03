@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./public/styles/stories.css">
+    <title>MEGA-LIBRARY_Contact.Page</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+            <div class="ml">MEGA-LIBRRARY</div>
+            <img src="./public/asset/realPng.png" alt="">
+        </div>
+            
+            <div class="routes">
+                <a href="./index.html">HOME</a>
+                <a href="./about.html">ABOUT</a>
+                <!-- <a href="./history.html">HISTORIES</a> -->
+                <a href="#"  class="home">STORIES</a>
+                <a href="./contact.html">CONTACT US</a>
+                <div class="harm">&#9776;</div>
+            </div>
+        </nav>
+    </header>
+    <div class="body">
+
+        <aside class="harmburg">
+            <div class="wrap">
+            <a href="./index.html">HOME</a>
+            <a href="./about.html">ABOUT</a>
+            <a href="./stories.html">STORIES</a> 
+           <!-- <a href="./history.html">HISTORIES</a>  -->
+           <a href="./contact.html">CONTACT</a>
+           <a href="./privacy.html">Privacy and Policy</a>
+           <div class="close">Close</div>
+            </div>
+        </aside>
+
+        <div class="maina">
+            <div class="heading">Contact Us</div>
+            <div class="top">
+                <img src="./public/asset/WhatsApp Image 2025-12-09 at 17.52.24_6cf920d7.jpg" alt="">
+                <div class="text">@MEGA-LIBRARY <br>Contact Us Below The Following </div>
+                <div class="wrap">
+                <a href="mailto:martins@gmail.com"><img src="./public/asset/email.jpg"></a>
+                <a href="https://www.facebook.com/Ogbeidemartins1"><img src="./public/asset/facebook3.jpg"></a>
+                <a href="https://wa.me/+2349063668651"><img src="./public/asset/whatsapp.jpg"></a>
+                <a href="https://www.instagram.com/omegamartins3?igsh=MW5qMWlzM3llcHU3cw=="><img src="./public/asset/instagram1.jpg"></a>
+            </div>
+            </div>
+
+
+            <div class="sec">
+            <a href="https://www.facebook.com/Ogbeidemartins1">
+            <div class="section-one">
+                <img src="./public/asset/facebook3.jpg">
+                <div class="write">CONTACT US ON FACEBOOK PAGE FOR ANY INFORMATION OR UPDATES</div>
+            </div>
+           </a>
+
+           <a href="https://www.instagram.com/omegamartins3?igsh=MW5qMWlzM3llcHU3cw==">
+            <div class="section-one">
+                <img src="./public/asset/instagram1.jpg">
+                <div class="write">CONTACT US ON INSTAGRAM PAGE FOR ANY INFORMATION OR UPDATES</div>
+            </div>
+        </a>
+
+            <a href="https://wa.me/+2349063668651">
+            <div class="section-one">
+                <img src="./public/asset/whatsapp.jpg">
+                <div class="write">CONTACT US ON WHATSAPP FOR ENQUIRING</div>
+            </div>
+             </a>
+
+             <a href="mailto:martins@gmail.com">
+            <div class="section-one">
+                <img src="./public/asset/email.jpg">
+                <div class="write"> SEND US ON EMAIl  FOR ENQUIRIES</div>
+            </div>
+            </a>
+        </div>
+    </div>
+        
+       
+     
+          
+</body>
+</html>
+
+
+
+<script>
+    let harm = document.querySelector('.harm')
+    harm.onclick = function(event){
+        let aside= document.querySelector('.harmburg')
+        let main= document.querySelector('.main')
+        aside.style.display ="block"
+        main.style.display ="none"
+    }
+    
+    let close = document.querySelector('.close')
+    close.onclick = function(event){
+    let aside = document.querySelector('.harmburg')
+    let main= document.querySelector('.main')
+    aside.style.display ="none"
+    main.style.display ="flex"
+   
+    
+    
+}
+</script>
+</body>
+</html>
